@@ -1,0 +1,28 @@
+{
+  "name": "interact",
+  "version": "0.0.0",
+  "description": "a readable stream of mouse view events, wrapping up pointer-lock and drag-stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/interact.git"
+  },
+  "keywords": [
+    "browserify",
+    "pointer",
+    "lock",
+    "drag",
+    "rotate",
+    "view"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us>",
+  "license": "MIT",
+  "dependencies": {
+    "drag-stream": "0.0.2",
+    "fullscreen": "0.0.1",
+    "pointer-lock": "0.0.3"
+  }
+}
