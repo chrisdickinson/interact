@@ -20,6 +20,8 @@ function interact(el, skiplock) {
   ee.release = function() { internal.release && internal.release() }
   ee.request = function() { internal.request && internal.request() }
   ee.destroy = function() { internal.destroy && internal.destroy() }
+  ee.pointerAvailable = function() { return lock.available() }
+  ee.fullscreenAvailable = function() { return full.available() }
 
   forward()
 

@@ -42,6 +42,14 @@ pointerlock is available) on click. if the lock is declined (politely!) it'll sw
 forwards these commands to the internal handler (whether that be `pointer-lock` or `drag-stream`)
 if a corresponding method exists.
 
+### interact.pointerAvailable() -> boolean
+
+returns whether or not pointer lock is available -- forwards from `require('pointer-lock').available()`.
+
+### interact.fullscreenAvailable() -> boolean
+
+returns whether or not fullscreen is available -- forwards from `require('fullscreen').available()`.
+
 ### stream.initial -> {x: int, y: int, t: timestamp int}
 
 the initial position for streams.
