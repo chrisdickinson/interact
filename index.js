@@ -17,14 +17,16 @@ function interact(el, skiplock) {
     internal = uselock(el, politelydeclined)
   }
 
-  ee.release = function() { internal.release() }
-  ee.request = function() { internal.request() }
+  ee.release = function() { internal.release && internal.release() }
+  ee.request = function() { internal.request && internal.request() }
+  ee.destroy = function() { internal.destroy && internal.destroy() }
 
   forward()
 
   return ee
 
   function politelydeclined() {
+    ee.emit('opt-out')
     internal.destroy()
     internal = usedrag(el)
     forward()
@@ -88,6 +90,9 @@ function usedrag(el) {
 
     if(stream.paused) {
       ee.emit('release')
+      stream.emit('end')
+      stream.readable = false
+      stream.emit('close')
       stream = null
     }
 
