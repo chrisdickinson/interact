@@ -21,8 +21,8 @@
   "author": "Chris Dickinson <chris@neversaw.us>",
   "license": "MIT",
   "dependencies": {
-    "drag-stream": "0.0.2",
     "fullscreen": "0.0.1",
-    "pointer-lock": "0.0.3"
+    "pointer-lock": "0.0.3",
+    "drag-stream": "0.0.3"
   }
 }
