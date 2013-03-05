@@ -1,6 +1,6 @@
 {
   "name": "interact",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a readable stream of mouse view events, wrapping up pointer-lock and drag-stream",
   "main": "index.js",
   "scripts": {
